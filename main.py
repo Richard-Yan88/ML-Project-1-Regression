@@ -2,7 +2,9 @@ import tensorflow as tf
 import keras
 import pandas as pd
 import cv2
+import sklearn
 
+print(sklearn)
 print(tf)
 print(keras)
 print(pd)
