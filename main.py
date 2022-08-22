@@ -14,3 +14,5 @@ print("hello world")
 print("another commit")
 print("new branch")
 print("using pycharm to commit")
+
+print("renamed the folder :)")
