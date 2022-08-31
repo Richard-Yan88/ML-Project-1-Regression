@@ -36,15 +36,15 @@ y = np.array(data[predict])
 
 # Generating the highest accuracy model
 best = 0
-while best < .97:
+while best < .95:
     x_train, x_test, y_train, y_test = sklearn.model_selection.train_test_split(X, y, test_size = 0.1)
     
     linear = linear_model.LinearRegression()
-    
+        
     linear.fit(x_train,y_train)
     acc = linear.score(x_test, y_test)
     print(acc)
-    
+        
     if acc > best:
         best = acc
         with open("studentmodel.pickle", "wb") as f:
@@ -59,11 +59,11 @@ linear = pickle.load(pickle_in)
 print("Co: ",  linear.coef_)
 print("Intercept: ",  linear.intercept_)
 
-predictions = linear.predict(x_test)
+predictions = linear.predict(X)
 
 # Predictions based on Independent Factors
 for x in range(len(predictions)):
-    print(predictions[x], x_test[x], y_test[x])
+    print(predictions[x], X[x], y[x])
     
     
 p = 'G1'
