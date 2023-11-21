@@ -10,3 +10,5 @@ Multiple linear regression assumes:
     independent variables. Multiple lienar regression requires atleast two independent variabels, which can be nominal, ordinal, or interval
     /ratio level variables. A rule of thumb for the sample size is that regression analysis requires at least 20 cases per independet variable
     in the analysis.
+
+    askldfhjjklasf
